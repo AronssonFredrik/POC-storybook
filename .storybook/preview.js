@@ -1,0 +1,1 @@
+import '!style-loader!css-loader!sass-loader!../projects/komponentkartan/src/assets/komponentkartan.scss';

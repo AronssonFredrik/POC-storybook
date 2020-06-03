@@ -19,7 +19,9 @@
     "publish-local": "npm run packagr && npm pack dist/komponentkartan/",
     "test-ci": "ng test komponentkartan --watch=false --source-map=false",
     "test-ci-watch": "ng test komponentkartan --watch=true --source-map=false",
-    "postinstall": "ngcc"
+    "postinstall": "ngcc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@angular/animations": "~9.1.7",
@@ -51,10 +53,17 @@
     "@angular/cli": "^9.0.7",
     "@angular/compiler-cli": "^9.1.7",
     "@angular/language-service": "~9.1.7",
+    "@babel/core": "^7.10.2",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/angular": "^5.3.19",
     "@types/jasmine": "^2.8.16",
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "^12.11.1",
     "angular2-template-loader": "^0.6.2",
+    "babel-loader": "^8.1.0",
     "codelyzer": "^5.1.2",
     "electron": "^2.0.18",
     "jasmine-core": "~2.99.1",
