@@ -50,3 +50,5 @@ tools/*
 .DS_Store
 Thumbs.db
 *.tgz
+
+documentation.json
