@@ -1,57 +1,40 @@
 import { ButtonComponent } from 'projects/komponentkartan/src/lib/controls/button/button.component';
 import { PageBlockComponent } from 'projects/komponentkartan/src/lib/controls/page-block/page-block.component';
-import {
-  select,
-  boolean,
-  number,
-  text,
-  withKnobs,
-} from '@storybook/addon-knobs';
+import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/icon.component';
 
-import ButtonReadme from './button-all-examples/button-all-examples.md';
+import ButtonReadme from './example/example.md';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
 
 export default {
-  title: 'Button',
-  decorators: [withKnobs],
-  parameters: {
-    notes: { markdown: ButtonReadme }
-  }
+  title: 'Button'
 };
 
 export const Example = () => ({
   moduleMetadata: {
     entryComponents: [ButtonComponent],
-    declarations: [ButtonComponent, PageBlockComponent],
+    declarations: [ButtonComponent, PageBlockComponent]
   },
-  templateUrl: './button-all-examples/button-all-examples.component.html',
-  // props: {
-  //   text: 'Action only'
-  // },
+  templateUrl: './example/example.component.html'
 });
-
-export const SaveCancle = () => ({
-  moduleMetadata: {
-    entryComponents: [ButtonComponent],
-    declarations: [ButtonComponent],
+Example.story = {
+  parameters: {
+    notes: {
+      md: ButtonReadme
+    }
   }
+};
 
-});
-
-export const Playground = () => ({
+export const SaveCancelLock = () => ({
   moduleMetadata: {
     entryComponents: [ButtonComponent],
-    declarations: [ButtonComponent],
+    declarations: [ButtonComponent, PageBlockComponent, IconComponent],
+    imports: [FontAwesomeModule, IconModule]
   },
-  template: `<vgr-button [disabled]="disabled" [buttonStyle]="buttonStyle">
-  Playground
-  </vgr-button>`,
-
-  props: {
-    buttonStyle: select(
-      'buttonStyle',
-      ['primary', 'secondary', 'discreet'],
-      'primary'
-    ),
-    disabled: boolean('disabled', false),
-  },
+  templateUrl: './save-cancel/save-cancel.component.html'
 });
+SaveCancelLock.story = {
+  parameters: {
+    notes: { markdown: 'Hej här kan vi skriva annat' }
+  }
+};

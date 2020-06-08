@@ -20,7 +20,7 @@
     "test-ci": "ng test komponentkartan --watch=false --source-map=false",
     "test-ci-watch": "ng test komponentkartan --watch=true --source-map=false",
     "postinstall": "ngcc",
-    "storybook": "start-storybook -p 9008",
+    "storybook": "npm run storybook:prebuild && start-storybook -p 9008",
     "storybook:prebuild": "compodoc -p ./tsconfig.json -e json -d .",
     "build-storybook": "build-storybook"
   },
