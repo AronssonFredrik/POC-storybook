@@ -3,6 +3,8 @@ import { PageBlockComponent } from 'projects/komponentkartan/src/lib/controls/pa
 import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/icon.component';
 
 import ButtonReadme from './example/example.md';
+import saveCancelReadMe from './save-cancel/save-cancel.md';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
 
@@ -20,7 +22,7 @@ export const Example = () => ({
 Example.story = {
   parameters: {
     notes: {
-      md: ButtonReadme
+      markdown: ButtonReadme
     }
   }
 };
@@ -35,6 +37,8 @@ export const SaveCancelLock = () => ({
 });
 SaveCancelLock.story = {
   parameters: {
-    notes: { markdown: 'Hej här kan vi skriva annat' }
+    notes: {
+      markdown: saveCancelReadMe
+     }
   }
 };

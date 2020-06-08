@@ -1,0 +1,12 @@
+<vgr-page-block>
+  <vgr-button buttonStyle="secondary" (click)="locked = !locked" [disabled]="locked">
+    Avbryt
+  </vgr-button>
+  <vgr-button type="submit" [disabled]="locked" (click)="locked = !locked">
+    Spara
+  </vgr-button>
+  <vgr-button [disabled]="!locked" (click)="locked = !locked">
+    <vgr-icon icon="lock" color="light" *ngIf="locked"></vgr-icon>
+    <vgr-icon icon="lock-open" color="light" *ngIf="!locked"></vgr-icon>
+  </vgr-button>
+</vgr-page-block>
