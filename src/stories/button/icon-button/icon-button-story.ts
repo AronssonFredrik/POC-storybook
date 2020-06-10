@@ -3,7 +3,7 @@ import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/ic
 import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import Readme from './icon-button-readme.md';
+import * as Readme from './icon-button-readme.md';
 
 export const Ikon = () => ({
   moduleMetadata: {

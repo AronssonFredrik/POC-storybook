@@ -1,7 +1,7 @@
 # Button
 
 ## Användning
-Import it via script tag:
+Import it via:
 
 ```html
 <vgr-button>Klicka på mig!</vgr-button>

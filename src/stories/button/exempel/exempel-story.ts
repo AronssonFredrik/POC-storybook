@@ -1,7 +1,7 @@
 import { ButtonComponent } from 'projects/komponentkartan/src/lib/controls/button/button.component';
 import { PageBlockComponent } from 'projects/komponentkartan/src/lib';
 
-import Readme from './exempel-readme.md';
+import * as Readme from './exempel-readme.md';
 
 export const Exempel = () => ({
   moduleMetadata: {

@@ -4,7 +4,7 @@ import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/ic
 import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import Readme from './spara-avbryt-readme.md';
+import * as Readme from './spara-avbryt-readme.md';
 
 export const SparaAvbryt = () => ({
   moduleMetadata: {
