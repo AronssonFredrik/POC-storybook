@@ -3,7 +3,8 @@ import { PageBlockComponent } from 'projects/komponentkartan/src/lib/controls/pa
 import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/icon.component';
 
 import ButtonReadme from './example/example.md';
-import saveCancelReadMe from './save-cancel/save-cancel.md';
+import SaveCancelReadMe from './save-cancel/save-cancel.md';
+import IconButtonReadme from './icon/icon-button.md';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
@@ -27,6 +28,23 @@ Example.story = {
   }
 };
 
+export const IconButton = () => ({
+  moduleMetadata: {
+    entryComponents: [ButtonComponent],
+    declarations: [ButtonComponent, IconComponent],
+    imports: [FontAwesomeModule, IconModule]
+  },
+  templateUrl: './icon/icon-button.component.html',
+});
+IconButton.story = {
+  parameters: {
+    notes: {
+      markdown: IconButtonReadme
+    }
+  }
+};
+
+
 export const SaveCancelLock = () => ({
   moduleMetadata: {
     entryComponents: [ButtonComponent],
@@ -38,7 +56,7 @@ export const SaveCancelLock = () => ({
 SaveCancelLock.story = {
   parameters: {
     notes: {
-      markdown: saveCancelReadMe
+      markdown: SaveCancelReadMe
      }
   }
 };
