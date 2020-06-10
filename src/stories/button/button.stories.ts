@@ -5,9 +5,12 @@ import { IconComponent } from 'projects/komponentkartan/src/lib/controls/icon/ic
 import ButtonReadme from './example/example.md';
 import SaveCancelReadMe from './save-cancel/save-cancel.md';
 import IconButtonReadme from './icon/icon-button.md';
+import ButtonGroupReadme from './button-group/button-group.md';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconModule } from 'projects/komponentkartan/src/lib/controls/icon/icon.module';
+
+import { ButtonGroup } from './button-group/button-group-story';
 
 export default {
   title: 'Button'
@@ -44,6 +47,7 @@ IconButton.story = {
   }
 };
 
+export { ButtonGroup };
 
 export const SaveCancelLock = () => ({
   moduleMetadata: {
@@ -60,3 +64,4 @@ SaveCancelLock.story = {
      }
   }
 };
+
