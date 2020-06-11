@@ -22,7 +22,7 @@
     "postinstall": "ngcc",
     "storybook": "npm run storybook:prebuild && start-storybook -p 9008",
     "storybook:prebuild": "compodoc -p ./tsconfig.json -e json -d .",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook && gh-pages -d storybook-static"
   },
   "dependencies": {
     "@angular/animations": "~9.1.7",
@@ -73,6 +73,7 @@
     "babel-loader": "^8.1.0",
     "codelyzer": "^5.1.2",
     "electron": "^2.0.18",
+    "gh-pages": "^3.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^4.1.0",

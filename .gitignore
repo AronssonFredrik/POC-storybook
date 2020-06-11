@@ -52,3 +52,5 @@ Thumbs.db
 *.tgz
 
 documentation.json
+
+storybook-static
